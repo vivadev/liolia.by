@@ -1,25 +1,33 @@
 #welcome-message {
 	font-family: 'Philosopher', sans-serif;
 	text-align: center;
-	margin-top: 30px;
+	margin: 30px 0 35px 0;
 	font-size: 45px;
 	color: #a9a9a9;
 }
 
+#liolia-logo {
+	margin: 20px auto;
+	width: 80%;
+	text-align: center;
+}
+img {
+	max-width: 100%;	
+}
+
 .loader {
 	width: 310px;
-	margin-left: -150px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -40px;
+	margin: 20px auto 50px;
 }
 .loader_element {
 	display: inline-block;
-	width: 90px;
-	height: 90px;
-	margin:0 5px;
+	width: 80px;
+	height: 80px;
+	margin:0 10px;
 	text-align:center;
 	background-color: #a9a9a9;
 	border-radius:45px;
+}
+.loader_element.down {
+	margin-bottom: -30px;	
 }
