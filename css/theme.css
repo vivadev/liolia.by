@@ -221,8 +221,8 @@ p {
 }
 .lead {
     font-size: 20px;
-	font-weight: 300; 
-    line-height: 1.4;
+    font-weight: 300; 
+    line-height: 1.6;
 }
 [data-overlay-dark] p.lead {
 	font-weight: 300;
@@ -348,6 +348,9 @@ a:active {
 .hero-fullwidth .container {
     padding-top: 60px;
     z-index: 2;
+}
+.background-image.background-repeat { 
+background-size: initial!important; 
 }
 .hero-fullwidth.parallax > .background-image {
     height: 100%;
@@ -1448,7 +1451,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
     overflow: hidden;
     margin-bottom: 19px;
     border-radius: 2px;
-	cursor: pointer;
+    cursor: pointer;
 }
 .container-fluid .portfolio-item {
     border-radius: 0;
@@ -1538,7 +1541,7 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
     -webkit-transition: opacity 0.6s;
 }
 .portfolio-item:hover .item-image:after {
-    opacity: .8;
+    opacity: .2;
 }
 @media all and (max-width: 990px) {
     .portfolio-item .item-image:after,

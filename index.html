@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Крама "Лёля" - рэчы ад беларускіх майстроў</title>
+	<meta name="description" content="Крама 'Лёля' - прыгожыя і карысныя рэчы ад беларускіх майстроў">
+	<meta property="og:title" content="Крама 'Лёля' - прыгожыя і карысныя рэчы ад беларускіх майстроў">
+	<meta property="og:image" content="img/backgrounds/bg-1.jpg">
+	<meta property="og:description" content="У нас можна знайсці працы майстроў з розных гарадоў і вёсак Беларусі. Цікавыя незвычайныя рэчы, прыгожыя і патрэбныя ў штодзённым жыцці: кераміку, дрэва, рэчы для кухні, хатні тэкстыль, вязаную вопратку, торбачкі, інтэр'ерныя кампазіцыі, упрыгожванні і не толькі. Неабыякавыя падарункі ды сувеніры.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link href="img/assets/favicon.png" rel="icon" type="image/png">*-->
+        <link href="img/assets/favicon.png" rel="icon" type="image/png">
         <link href="css/init.css" rel="stylesheet" type="text/css">
         <link href="css/ion-icons.min.css" rel="stylesheet" type="text/css">
         <link href="css/etline-icons.min.css" rel="stylesheet" type="text/css">
@@ -41,8 +45,8 @@
                             <!-- Each section must have corresponding ID ( #hero -> id="hero" ) -->
                             <li><a href="#hero">Галоўная</a></li>
                             <li><a href="#about">Пра Нас</a></li>
-                            <li><a href="#gallery">Што прадаем</a></li>
-                            <li><a href="#vossen-map">Як знайсці</a></li>
+                            <li><a href="#gallery">Што можна набыць</a></li>
+                            <li><a href="#vossen-map">Як нас знайсці</a></li>
 			    <li><a href="#working-time">Час працы</a></li>
 			    <li><a href="#contacts">Кантакты</a></li>                             
                             <li class="nav-separator"></li>
@@ -88,38 +92,25 @@
         <!-- End Hero -->
         
         <!-- About Us -->
-        <section id="about" class="pt100 pb90" data-overlay-dark="8">
-            <div class="container">                      
+        <section id="about" class="pt100 pb90" data-overlay-dark="7">
+            <div class="background-image background-repeat">
+                <img src="img/backgrounds/eight_horns.png" alt="#">
+            </div>
+            <div class="container ordinary-background">                      
                 <div class="row">    
 
-                    <div class="col-md-12 text-center pb20">   
-                        <h2>Рэчы зробленыя<br><strong>рукамі майстра</strong></h2>
-                        <p class="lead">Тэкст ад Дашы <span class="color">пр тое, як павінна</span> быць<br>напісана тут і чаго мы трымаемся і хочам і гэтак далей.</p>
-                    </div>  
-                    
-                    <div class="col-sm-6 feature-left">
-                        <i class="icon-telescope size-3x color"></i>
-                        <i class="icon-telescope back-icon"></i> 
-                        <div class="feature-left-content">
-                            <h4><strong>Та дам пам</strong><br>Парарам мам</h4>
-                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
-                        </div> 
-                    </div>
-                     <div class="col-sm-6 feature-left">
-                        <i class="icon-telescope size-3x color"></i>
-                        <i class="icon-telescope back-icon"></i> 
-                        <div class="feature-left-content">
-                            <h4><strong>Та дам пам</strong><br>Парарам мам</h4>
-                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
-                        </div> 
-                    </div>
+                    <div class="col-md-12 col-lg-8 col-lg-offset-2 text-center pb20">   
+                                              
+			<p class="lead">У нас можна знайсці працы майстроў з розных гарадоў і вёсак Беларусі. Цікавыя незвычайныя рэчы, прыгожыя і патрэбныя ў штодзённым жыцці:<br><span class="color">кераміку, дрэва, рэчы для кухні, хатні тэкстыль, вязаную вопратку, торбачкі, інтэр'ерныя кампазіцыі, упрыгожванні і не толькі.<br>Неабыякавыя падарункі ды сувеніры.</span></p>
 
+<p class="lead">Майстры - людзі незвычайныя, кожны па-свойму адораны талентам, якім ахвотна дзеляцца з усімі праз свае працы. Калі аднойчы Вы спаткаеце рэч, зробленую майстрам, якая зайграе ва ўнісон з Вашым сэрцам, то яна будзе штодня настройваць Вас на пазітыў:)<br><span class="color">Прыемных сустрэч ў краме «Лёля»!</span></p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End About Us --> 
         
-        <!-- Portfolio -->
+        <!-- Goods photo -->
         <section id="gallery" class="pt100 pb110">
             <div class="container">
                 <div class="row text-center">    
@@ -131,141 +122,295 @@
                     
                     <div class="portfolio" data-gap="20"><!-- Values: 10, 15, 20, 25, 30 and 35 -->
                             
-                        <!-- Portfolio Category Filters -->
+                        <!-- goods Category Filters -->
                         <ul class="vossen-portfolio-filters" data-initial-filter="*">
-                            <li data-filter="*">Усё</li>
-                            <li data-filter="Branding">Посуд</li>
-                            <li data-filter="Digital">Скура</li>
-                            <li data-filter="Bags">Торбачкі</li>
-							<li data-filter="Print">Цацкі</li>
-							<li data-filter="Others">Іншае</li>
+                           <li data-filter="*">Усё</li>
+                           <li data-filter="Dishes">Посуд</li>
+                           <li data-filter="Bags">Торбачкі</li>
+			   <li data-filter="Toys">Цацкі</li>
+                           <li data-filter="Bijouterie">Упрыгожванні</li>
+			   <li data-filter="Others">Іншае</li>
                         </ul>
                         
-                        <!-- Portfolio Items Container-->
+                        <!-- Goods Items Container-->
                         <div class="vossen-portfolio lightbox">	                            
-                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/1.jpg">
-											<img alt="#" src="img/portfolio/1.jpg" />
-										</a>
+					<a href="img/goods/1.jpg">
+						<img alt="#" src="img/goods/1.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/2.jpg">
-											<img alt="#" src="img/portfolio/2.jpg" />
-										</a>
+					<a href="img/goods/3.jpg">
+						<img alt="#" src="img/goods/3.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-8 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/3.jpg">
-											<img alt="#" src="img/portfolio/3.jpg" />
-										</a>
+					<a href="img/goods/4.jpg">
+						<img alt="#" src="img/goods/4.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-                            <!-- Portfolio Item -->
-                            <div class="col-md-8 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                        <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/4.jpg">
-											<img alt="#" src="img/portfolio/4.jpg" />
-										</a>
+					<a href="img/goods/5.jpg">
+						<img alt="#" src="img/goods/5.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/5.jpg">
-											<img alt="#" src="img/portfolio/5.jpg" />
-										</a>
+					<a href="img/goods/6.jpg">
+						<img alt="#" src="img/goods/6.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-							                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/6.jpg">
-											<img alt="#" src="img/portfolio/6.jpg" />
-										</a>
+					<a href="img/goods/7.jpg">
+						<img alt="#" src="img/goods/7.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-							                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/7.jpg">
-											<img alt="#" src="img/portfolio/7.jpg" />
-										</a>
+					<a href="img/goods/8.jpg">
+						<img alt="#" src="img/goods/8.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-							                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/8.jpg">
-											<img alt="#" src="img/portfolio/8.jpg" />
-										</a>
+					<a href="img/goods/9.jpg">
+						<img alt="#" src="img/goods/9.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
-							                            <!-- Portfolio Item -->
-                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Branding Bags" >                                
-                                <div class="portfolio-item">
-                                    <div class="item-caption">
-                                        <h4>Wunderkind</h4>
-                                        <p>Branding</p>
-                                    </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
                                     <div class="item-image">
-										<a href="img/portfolio/9.jpg">
-											<img alt="#" src="img/portfolio/9.jpg" />
-										</a>
+					<a href="img/goods/11.jpg">
+						<img alt="#" src="img/goods/11.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/12.jpg">
+						<img alt="#" src="img/goods/12.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                        <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/13.jpg">
+						<img alt="#" src="img/goods/13.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/15.jpg">
+						<img alt="#" src="img/goods/15.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/16.jpg">
+						<img alt="#" src="img/goods/16.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/17.jpg">
+						<img alt="#" src="img/goods/17.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bijouterie" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/18.jpg">
+						<img alt="#" src="img/goods/18.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>  
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/20.jpg">
+						<img alt="#" src="img/goods/20.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/21.jpg">
+						<img alt="#" src="img/goods/21.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bijouterie" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/24.jpg">
+						<img alt="#" src="img/goods/24.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/22.jpg">
+						<img alt="#" src="img/goods/22.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>     
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/23.jpg">
+						<img alt="#" src="img/goods/23.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/25.jpg">
+						<img alt="#" src="img/goods/25.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/26.jpg">
+						<img alt="#" src="img/goods/26.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/27.jpg">
+						<img alt="#" src="img/goods/27.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/28.jpg">
+						<img alt="#" src="img/goods/28.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/32.jpg">
+						<img alt="#" src="img/goods/32.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/29.jpg">
+						<img alt="#" src="img/goods/29.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/30.jpg">
+						<img alt="#" src="img/goods/30.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/31.jpg">
+						<img alt="#" src="img/goods/31.jpg" />
+					</a>
                                     </div>
                                 </div>                                
                             </div>
@@ -415,7 +560,15 @@
         
         <script src="js/jquery.js"></script>
         <script src="js/init.js"></script>
-        <script src="js/scripts.js"></script>       
+        <script src="js/scripts.js"></script>  
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-85661595-1', 'auto');
+  		ga('send', 'pageview');
+	</script>     
         
     </body>
 </html>
