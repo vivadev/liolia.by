@@ -1,24 +1,574 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Крама Лёля</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <h3 id="welcome-message">Хутка будзе...</h3>
-	<div class="loader">
-		<div class="loader_element down"></div>
-		<div class="loader_element"></div>
-		<div class="loader_element down"></div>
-	</div>
-	<div id="liolia-logo">
-		<img alt="Лёля" src="img/liolia-black.png" />
-	</div>
-  </body>
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Крама "Лёля" - рэчы ад беларускіх майстроў</title>
+	<meta name="description" content="Крама 'Лёля' - прыгожыя і карысныя рэчы ад беларускіх майстроў">
+	<meta property="og:title" content="Крама 'Лёля' - прыгожыя і карысныя рэчы ад беларускіх майстроў">
+	<meta property="og:image" content="img/backgrounds/bg-1.jpg">
+	<meta property="og:description" content="У нас можна знайсці працы майстроў з розных гарадоў і вёсак Беларусі. Цікавыя незвычайныя рэчы, прыгожыя і патрэбныя ў штодзённым жыцці: кераміку, дрэва, рэчы для кухні, хатні тэкстыль, вязаную вопратку, торбачкі, інтэр'ерныя кампазіцыі, упрыгожванні і не толькі. Неабыякавыя падарункі ды сувеніры.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="img/assets/favicon.png" rel="icon" type="image/png">
+        <link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/ion-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/etline-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">  
+        <link href="css/custom.css" rel="stylesheet" type="text/css"> 
+        <link href="css/colors/green.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,100,200,300%7CHind:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body data-fade-in="true">
+        
+        <div class="pre-loader"><div></div></div>
+        
+        <!-- Start Header -->
+        <nav class="navbar nav-down" data-fullwidth="true" data-menu-style="transparent" data-animation="shrink"><!-- Styles: light, dark, transparent | Animation: hiding, shrink -->
+            <div class="container">
+                
+                <div class="navbar-header">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                        <a class="navbar-brand to-top" href="#"><img src="img/assets/logo-light.png" class="logo-light" alt="#"><img src="img/assets/logo-dark.png" class="logo-dark" alt="#"></a> 
+                    </div>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav menu-right">                            
+                            
+                            <!-- Each section must have corresponding ID ( #hero -> id="hero" ) -->
+                            <li><a href="#hero">Галоўная</a></li>
+                            <li><a href="#about">Пра Нас</a></li>
+                            <li><a href="#gallery">Што можна набыць</a></li>
+                            <li><a href="#vossen-map">Як нас знайсці</a></li>
+			    <li><a href="#working-time">Час працы</a></li>
+			    <li><a href="#contacts">Кантакты</a></li>                             
+                            <li class="nav-separator"></li>
+                            <li  class="nav-icon"><a href="https://www.facebook.com/kramaliolia" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+			    <li  class="nav-icon"><a href="https://vk.com/kramaliolia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>  
+			    <li  class="nav-icon"><a href="https://www.instagram.com/kramaliolia" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                </div> 
+            </div>
+        </nav>
+        <!-- End Header -->
+        
+        <!-- Hero -->
+        <section id="hero" class="hero-fullscreen parallax" data-overlay-dark="5">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-1.jpg" alt="#">
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="hero-content-slider mt20" data-autoplay="false" data-speed="4000">
+                        
+                        <div>
+                            <h1><strong>Крама "Лёля"</strong></h1>
+                            <p class="lead">Рэчы, зробленыя рукамі беларускіх майстроў.<br>Прыгожыя і карысныя.</p>
+                            <a href="#about" class="btn btn-lg btn-primary btn-scroll">Больш пра нас</a>  
+                        </div>
+                        
+                        <div>
+                            <h1><strong>Крама "Лёля"</strong></h1>
+                            <p class="lead">Рэчы, зробленыя рукамі беларускіх майстроў.<br>Прыгожыя і карысныя.</p>
+                            <a href="#about" class="btn btn-lg btn-primary btn-scroll">We're Creative</a>  
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Hero -->
+        
+        <!-- About Us -->
+        <section id="about" class="pt100 pb90" data-overlay-dark="7">
+            <div class="background-image background-repeat">
+                <img src="img/backgrounds/eight_horns.png" alt="#">
+            </div>
+            <div class="container ordinary-background">                      
+                <div class="row">    
+
+                    <div class="col-md-12 col-lg-8 col-lg-offset-2 text-center pb20">   
+                                              
+			<p class="lead">У нас можна знайсці працы майстроў з розных гарадоў і вёсак Беларусі. Цікавыя незвычайныя рэчы, прыгожыя і патрэбныя ў штодзённым жыцці:<br><span class="color">кераміку, дрэва, рэчы для кухні, хатні тэкстыль, вязаную вопратку, торбачкі, інтэр'ерныя кампазіцыі, упрыгожванні і не толькі.<br>Неабыякавыя падарункі ды сувеніры.</span></p>
+
+<p class="lead">Майстры - людзі незвычайныя, кожны па-свойму адораны талентам, якім ахвотна дзеляцца з усімі праз свае працы. Калі аднойчы Вы спаткаеце рэч, зробленую майстрам, якая зайграе ва ўнісон з Вашым сэрцам, то яна будзе штодня настройваць Вас на пазітыў:)<br><span class="color">Прыемных сустрэч ў краме «Лёля»!</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us --> 
+        
+        <!-- Goods photo -->
+        <section id="gallery" class="pt100 pb110">
+            <div class="container">
+                <div class="row text-center">    
+
+                    <div class="col-md-12 text-center pb20">   
+                        <h2><strong>Прыклады таго, што у нас прадаецца.</strong></h2>
+                        <p class="lead">Гэта толькі некаторая частка. Асартымент мяняецца і папаўняецца.</p>
+                    </div>
+                    
+                    <div class="portfolio" data-gap="20"><!-- Values: 10, 15, 20, 25, 30 and 35 -->
+                            
+                        <!-- goods Category Filters -->
+                        <ul class="vossen-portfolio-filters" data-initial-filter="*">
+                           <li data-filter="*">Усё</li>
+                           <li data-filter="Dishes">Посуд</li>
+                           <li data-filter="Bags">Торбачкі</li>
+			   <li data-filter="Toys">Цацкі</li>
+                           <li data-filter="Bijouterie">Упрыгожванні</li>
+			   <li data-filter="Others">Іншае</li>
+                        </ul>
+                        
+                        <!-- Goods Items Container-->
+                        <div class="vossen-portfolio lightbox">	                            
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/1.jpg">
+						<img alt="#" src="img/goods/1.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/3.jpg">
+						<img alt="#" src="img/goods/3.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-8 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/4.jpg">
+						<img alt="#" src="img/goods/4.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                        <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/5.jpg">
+						<img alt="#" src="img/goods/5.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/6.jpg">
+						<img alt="#" src="img/goods/6.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/7.jpg">
+						<img alt="#" src="img/goods/7.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/8.jpg">
+						<img alt="#" src="img/goods/8.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/9.jpg">
+						<img alt="#" src="img/goods/9.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/11.jpg">
+						<img alt="#" src="img/goods/11.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/12.jpg">
+						<img alt="#" src="img/goods/12.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                        <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/13.jpg">
+						<img alt="#" src="img/goods/13.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/15.jpg">
+						<img alt="#" src="img/goods/15.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/16.jpg">
+						<img alt="#" src="img/goods/16.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/17.jpg">
+						<img alt="#" src="img/goods/17.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bijouterie" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/18.jpg">
+						<img alt="#" src="img/goods/18.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>  
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/20.jpg">
+						<img alt="#" src="img/goods/20.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Dishes" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/21.jpg">
+						<img alt="#" src="img/goods/21.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bijouterie" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/24.jpg">
+						<img alt="#" src="img/goods/24.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/22.jpg">
+						<img alt="#" src="img/goods/22.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>     
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/23.jpg">
+						<img alt="#" src="img/goods/23.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/25.jpg">
+						<img alt="#" src="img/goods/25.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/26.jpg">
+						<img alt="#" src="img/goods/26.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/27.jpg">
+						<img alt="#" src="img/goods/27.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/28.jpg">
+						<img alt="#" src="img/goods/28.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/32.jpg">
+						<img alt="#" src="img/goods/32.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Bags" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/29.jpg">
+						<img alt="#" src="img/goods/29.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Others" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/30.jpg">
+						<img alt="#" src="img/goods/30.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- Goods Item -->
+                            <div class="col-md-4 col-sm-6 galleryItem" data-filter="Toys" >                                
+                                <div class="portfolio-item">      
+                                    <div class="item-image">
+					<a href="img/goods/31.jpg">
+						<img alt="#" src="img/goods/31.jpg" />
+					</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>						
+                    </div>                
+                </div>
+            </div>
+        </section>            
+        <!-- End Portfolio --> 
+        
+        <!-- Get Connected -->  
+        <section id="contacts" class="parallax pt100 pb100" data-overlay-dark="5">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-7.jpg" alt="#">
+            </div>
+            <div class="container">                      
+                <div class="row">
+
+                    <div class="col-sm-8 mr-auto text-center">
+                        <h2>Будзьце на сувязі <br><strong>Кантакуйце з намі праз:</strong></h2>                        
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <ul class="connected-icons social-icons">
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://www.facebook.com/kramaliolia">
+                                    <i class="fa fa-facebook"></i>
+                                    <h5>Facebook</h5>
+                                    <p>Упадабай нашу старонку</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://vk.com/kramaliolia">
+                                    <i class="fa fa-vk"></i>
+                                    <h5>Вконтакте</h5>
+                                    <p>Далучайся да суполкі</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://www.instagram.com/kramaliolia">
+                                    <i class="fa fa-instagram"></i>
+                                    <h5>Instagram</h5>
+                                    <p>Глядзі нашы фота</p>
+                                </a>
+                            </li>
+
+                           <!-- <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="fa fa-skype"></i> 
+                                    <h5>Skype</h5>
+                                    <p>Звязвайся</p>
+                                </a>
+                            </li> -->
+
+                        </ul>        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Get Connected -->
+        
+        <!-- Contact Info -->
+        <section class="parallax pt110 pb70" data-overlay-light="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-8.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-12 details white text-center">
+                        <div class="phone-number mb10">
+                            <h1 class="bold">+375 29 55-10-221</h1>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3>krama.liolia@<span class="color">gmail.com</span></h3>
+                            <h4>Вялікая Траецкая 7, <span class="color">Гродна</span></h4>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Info -->  
+
+        <!-- Quotes -->
+        <section id="working-time" class="parallax pt100 pb90" data-overlay-dark="7">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-4.jpg" alt="#">
+            </div>
+            <div class="container">   
+                <div class="row">
+
+                    <div class="col-sm-8 mr-auto text-center">
+                        <h2>Час працы</h2>                        
+                    </div>
+
+                    <div class="col-md-12 text-center">   
+                            
+                                <h4>
+				   Панядзелак: <strong>Выходны</strong>                                    
+                                </h4>
+                                <h4>
+				   Аўторак - Пятніца: <strong>10 - 19</strong>                                    
+                                </h4>
+                                <h4>
+				   Субота, Нядзеля: <strong>11 - 17</strong>                                   
+                                </h4>                            
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Quotes -->
+        
+        <!-- Google Map -->
+        <section 
+            id="vossen-map"
+            data-map-address="53.682604, 23.830443"
+            data-marker-info="Чакаем вас!<br>Вялікая Траецкая 7, Гродна"
+            data-maps-api-key="AIzaSyBD3JE1T5ssqLMdfRgR1bErpuWNBtIMHbI"
+            data-map-zoom="17"
+            data-map-height="500px"
+            data-map-style="standard"> <!-- dark, light, standard -->
+        </section>
+        <!-- End Google Map -->
+        
+        <!-- Start Footer -->
+        <footer id="footer" class="footer style-1 dark">
+
+            <p class="col-md-12 text-center">Крама "Лёля"<br>Гродна, 2016</p>
+            <ul>                
+
+                <li><a href="https://www.facebook.com/kramaliolia" target="_blank" class="color"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+		<li><a href="https://vk.com/kramaliolia" target="_blank" class="color"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>  
+		<li><a href="https://www.instagram.com/kramaliolia" target="_blank" class="color"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+ 
+            </ul>
+            
+            <!-- Back To Top Button -->
+            <span><a class="scroll-top"><i class="ion-chevron-up"></i></a></span>
+            
+        </footer>
+        <!-- End Footer -->
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/scripts.js"></script>  
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-85661595-1', 'auto');
+  		ga('send', 'pageview');
+	</script>     
+        
+    </body>
 </html>
