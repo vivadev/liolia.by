@@ -635,10 +635,6 @@ img {
 .hero-content-slider {
     text-align: center;
     padding: 0 20px;
-    opacity: 0;
-    -webkit-transition: opacity 1.3s;
-    -moz-transition: opacity 1.3s;
-    transition: opacity 1.3s;
 } 
 .hero-content-slider h1 {
     margin-bottom: 20px;
