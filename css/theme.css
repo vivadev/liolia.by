@@ -1539,13 +1539,6 @@ fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, f
 .portfolio-item:hover .item-image:after {
     opacity: .2;
 }
-@media all and (max-width: 990px) {
-    .portfolio-item .item-image:after,
-    .portfolio-item:hover .item-image:after {
-        background: linear-gradient(rgba(0, 0, 0, 0) 0%, #191a1c 100%);
-        opacity: 1;
-    }
-}
 .portfolio-wide [data-gap="0"] { padding: 0 }
 [data-gap="0"] .vossen-portfolio .portfolio-item { margin-bottom: 0 }
 [data-gap="0"] .vossen-portfolio > div { padding: 0 }
